@@ -44,7 +44,7 @@ if($arrJson['events'][0]['message']['text'] == "สวัสดี"){
   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
   $arrPostData['messages'][0]['type'] = "text";
   $arrPostData['messages'][0]['text'] = "ลองคิดเองนะ";
- 
+}
  
 $ch = curl_init();
 curl_setopt($ch, CURLOPT_URL,$strUrl);
